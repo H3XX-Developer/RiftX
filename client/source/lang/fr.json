@@ -11,4 +11,6 @@
   "installing": "Installation...",
   "error_generic": "Une erreur est survenue.",
   "error_network": "Pas de connexion internet.",
-  "error_
+  "error_verify": "La vérification du téléchargement a échoué.",
+  "language": "Langue"
+}
