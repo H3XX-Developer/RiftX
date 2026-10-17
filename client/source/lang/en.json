@@ -1,0 +1,16 @@
+{
+  "app_name": "RiftX",
+  "loading": "Loading...",
+  "install": "Install",
+  "update": "Update",
+  "uninstall": "Uninstall",
+  "settings": "Settings",
+  "back": "Back",
+  "download": "Downloading...",
+  "verifying": "Verifying...",
+  "installing": "Installing...",
+  "error_generic": "Something went wrong.",
+  "error_network": "No internet connection.",
+  "error_verify": "Download failed verification.",
+  "language": "Language"
+}
