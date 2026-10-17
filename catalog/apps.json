@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "updated": "2026-10-17T00:00:00Z",
+  "apps": [
+    {
+      "id": "example-tool",
+      "name": "Example Tool",
+      "author": "H3XX-Dev",
+      "category": "utility",
+      "description": "An example homebrew app for the RiftX catalog.",
+      "icon": "https://example.com/icons/example-tool.png",
+      "screenshots": [],
+      "repo": "https://github.com/H3XX-Dev/example-tool",
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-10-17",
+          "changelog": "Initial release.",
+          "size": 2458112,
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "min_dashboard": "17511",
+          "download": "https://example.com/releases/example-tool-1.0.0.xex"
+        }
+      ]
+    }
+  ]
+}
