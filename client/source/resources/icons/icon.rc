@@ -1,2 +1,2 @@
 #include "resource.h"
-IDR_ICON_PNG PNG "icon.png"
+IDR_ICON_JPG JPG "riftx.jpg"
