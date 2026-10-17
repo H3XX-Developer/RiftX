@@ -1,21 +1,21 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:B8860B,30:DAA520,60:FFD700,100:B8860B&height=200&section=header&text=&fontSize=0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,25:FFD700,50:DAA520,75:B8860B,100:00D4FF&height=200&section=header&text=&fontSize=0" width="100%"/>
 
 <img src="assets/logo/riftx-logo.png" width="340" alt="RiftX"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=44&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=700&height=80&lines=RIFTX;THE+HOMEBREW+STORE;FOR+XBOX+360" alt="RiftX"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=900&color=DAA520&center=true&vCenter=true&width=700&height=30&lines=One+File.+No+Login.+No+Server.;Built+for+the+360+scene." alt="Tagline"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=900&color=00D4FF&center=true&vCenter=true&width=700&height=30&lines=One+File.+No+Login.+No+Server.;Built+for+the+360+scene." alt="Tagline"/>
 
 <br>
 
-<img src="https://img.shields.io/badge/STATUS-NOT%20PUBLIC%20YET-B8860B?style=for-the-badge&labelColor=DAA520" alt="Status"/>
-<img src="https://img.shields.io/badge/PRIVATE%20DEV-ACTIVE-FFD700?style=for-the-badge&labelColor=B8860B" alt="Dev"/>
-<img src="https://img.shields.io/badge/LICENSE-PROPRIETARY-DAA520?style=for-the-badge&labelColor=FFD700" alt="License"/>
-<img src="https://img.shields.io/badge/OPEN%20SOURCE-NO-B8860B?style=for-the-badge&labelColor=DAA520" alt="Open Source"/>
-<img src="https://img.shields.io/badge/CONSOLE-RGH%20%7C%20JTAG-FFD700?style=for-the-badge&labelColor=B8860B" alt="Console"/>
-<img src="https://img.shields.io/badge/SOLO%20DEV-YES-DAA520?style=for-the-badge&labelColor=FFD700" alt="Solo Dev"/>
+<img src="https://img.shields.io/badge/STATUS-NOT%20PUBLIC%20YET-FFD700?style=for-the-badge&labelColor=00D4FF" alt="Status"/>
+<img src="https://img.shields.io/badge/PRIVATE%20DEV-ACTIVE-00D4FF?style=for-the-badge&labelColor=FFD700" alt="Dev"/>
+<img src="https://img.shields.io/badge/LICENSE-PROPRIETARY-DAA520?style=for-the-badge&labelColor=B8860B" alt="License"/>
+<img src="https://img.shields.io/badge/OPEN%20SOURCE-NO-00D4FF?style=for-the-badge&labelColor=FFD700" alt="Open Source"/>
+<img src="https://img.shields.io/badge/CONSOLE-RGH%20%7C%20JTAG-FFD700?style=for-the-badge&labelColor=00D4FF" alt="Console"/>
+<img src="https://img.shields.io/badge/SOLO%20DEV-YES-00D4FF?style=for-the-badge&labelColor=B8860B" alt="Solo Dev"/>
 
 <br><br>
 
@@ -164,7 +164,7 @@ new icon, or a translated string — it all helps RiftX get better.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=FFD700&center=true&vCenter=true&width=650&height=35&lines=Browse.;Download.;Install.;Play.;All+on+your+Xbox+360." alt="What"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&width=650&height=35&lines=Browse.;Download.;Install.;Play.;All+on+your+Xbox+360." alt="What"/>
 
 </div>
 
@@ -334,23 +334,26 @@ RiftX will host:
 
 ## 🎨 Design
 
-RiftX uses a **metallic rich gold** theme — deep bronze to bright gold
-gradients, shimmering highlights, and a dark cinematic background. The look
-is inspired by luxury branding and classic gaming interfaces.
+RiftX uses a **metallic gold and light blue** dual-tone theme — deep gold
+gradients for highlights and light blue (`#00D4FF`) for interactive
+elements. The contrast gives it a premium, futuristic look inspired by
+modern gaming interfaces.
 
 - 🌌 Deep black-purple background
-- 🥇 **Rich metallic gold** for interactive elements (`#FFD700`, `#DAA520`, `#B8860B`)
-- ✨ Shimmering gold gradients on buttons and titles
+- 🥇 **Rich metallic gold** for titles, highlights, achievements
+- 💎 **Light blue** for buttons, links, interactive elements
+- ✨ Shimmering gradients on badges and headers
 - 🕹️ Controller-first navigation throughout
 
-### Gold palette
+### Color palette
 
 | Color | Hex | Use |
 |---|---|---|
-| Bright Gold | `#FFD700` | Highlights, titles |
-| Goldenrod | `#DAA520` | Buttons, accents |
-| Dark Goldenrod | `#B8860B` | Borders, secondary |
-| Deep Bronze | `#8B6914` | Shadows, depth |
+| **Bright Gold** | `#FFD700` | Titles, main highlights |
+| **Goldenrod** | `#DAA520` | Secondary gold accents |
+| **Dark Goldenrod** | `#B8860B` | Deep gold shadows, borders |
+| **Light Blue** | `#00D4FF` | Buttons, links, glow effects |
+| **Deep Blue** | `#0088CC` | Blue shadows, depth |
 
 ---
 
@@ -462,7 +465,7 @@ without written permission.**
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B6914,50:B8860B,70:DAA520,100:FFD700&height=120&section=footer&text=&fontSize=0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,25:FFD700,50:DAA520,75:B8860B,100:00D4FF&height=120&section=footer&text=&fontSize=0" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=30&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=500&height=50&lines=RIFTX" alt="RiftX"/>
 
@@ -484,6 +487,6 @@ without written permission.**
 
 [💬 Join our Discord](PASTE_DISCORD_LINK_HERE)
 
-![Made with](https://img.shields.io/badge/MADE%20WITH-%E2%9D%A4%20%26%20C%2B%2B-FFD700?style=for-the-badge&labelColor=B8860B)
+![Made with](https://img.shields.io/badge/MADE%20WITH-%E2%9D%A4%20%26%20C%2B%2B-FFD700?style=for-the-badge&labelColor=00D4FF)
 
 </div>
