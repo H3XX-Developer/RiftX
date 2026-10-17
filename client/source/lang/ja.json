@@ -1,0 +1,16 @@
+{
+  "app_name": "RiftX",
+  "loading": "読み込み中...",
+  "install": "インストール",
+  "update": "更新",
+  "uninstall": "アンインストール",
+  "settings": "設定",
+  "back": "戻る",
+  "download": "ダウンロード中...",
+  "verifying": "確認中...",
+  "installing": "インストール中...",
+  "error_generic": "エラーが発生しました。",
+  "error_network": "インターネット接続がありません。",
+  "error_verify": "ダウンロードの検証に失敗しました。",
+  "language": "言語"
+}
