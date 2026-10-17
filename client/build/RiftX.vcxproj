@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Xbox 360">
+      <Configuration>Release</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <RootNamespace>RiftX</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemGroup>
+    <ClCompile Include="..\source\*.cpp" />
+    <ClCompile Include="..\source\ui\*.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\*.h" />
+    <ClInclude Include="..\source\ui\*.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\resources\video\riftxboot.rc" />
+    <ResourceCompile Include="..\source\resources\icons\icon.rc" />
+    <ResourceCompile Include="..\source\resources\fonts\fonts.rc" />
+    <ResourceCompile Include="..\source\resources\lang\lang.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
