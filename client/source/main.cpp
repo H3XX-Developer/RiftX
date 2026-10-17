@@ -1,6 +1,7 @@
 // ============================================================
 // RiftX — Xbox 360 Launcher
 // riftxboot.mp4 plays fully on launch — cannot be skipped.
+// Multi-language support with persistent settings.
 // ============================================================
 
 #include <xtl.h>
@@ -11,6 +12,8 @@
 #include "logger.h"
 #include "store.h"
 #include "video.h"
+#include "lang.h"
+#include "settings.h"
 #include "ui/renderer.h"
 #include "ui/input.h"
 #include "ui/theme.h"
@@ -24,12 +27,18 @@ AppState g_state;
 
 void __cdecl main() {
     Logger::Init();
+    Settings::Load();
+
+    // Use saved language if set, otherwise use default
+    const char* langCode = Settings::language[0] ? Settings::language : Config::DefaultLang();
+    Lang::Init(langCode);
+
     Renderer::Init();
     Theme::Apply();
     Input::Init();
 
-    if (Config::VideoEnabled()) {
-        Video::PlayIntro(Config::VideoVolume(), Config::SkipOnInput());
+    if (Settings::videoEnabled) {
+        Video::PlayIntro(Settings::videoVolume, Config::SkipOnInput());
     }
 
     while (true) {
