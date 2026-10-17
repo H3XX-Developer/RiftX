@@ -1,0 +1,2 @@
+#include "resource.h"
+IDR_RIFTXBOOT_MP4 MP4 "riftxboot.mp4"
