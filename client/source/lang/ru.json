@@ -1,0 +1,16 @@
+{
+  "app_name": "RiftX",
+  "loading": "Загрузка...",
+  "install": "Установить",
+  "update": "Обновить",
+  "uninstall": "Удалить",
+  "settings": "Настройки",
+  "back": "Назад",
+  "download": "Скачивание...",
+  "verifying": "Проверка...",
+  "installing": "Установка...",
+  "error_generic": "Что-то пошло не так.",
+  "error_network": "Нет подключения к интернету.",
+  "error_verify": "Ошибка проверки загрузки.",
+  "language": "Язык"
+}
