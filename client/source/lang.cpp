@@ -5,8 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-// All 9 languages are embedded in the XEX as resource strings.
-// We load them into a small in-memory dictionary on Init().
+#include "../resources/lang/resource.h"
 
 struct LangEntry {
     char key[64];
@@ -15,44 +14,54 @@ struct LangEntry {
 
 static LangEntry g_entries[512];
 static int g_entryCount = 0;
-
 static char g_current[8] = "en";
 
 struct LangInfo {
     const char* code;
     const char* name;
-    const char* data;
+    int resourceId;
 };
 
-// These symbols are defined by lang.rc — one per language.
-extern const char* LANG_EN_DATA;
-extern const char* LANG_ES_DATA;
-extern const char* LANG_FR_DATA;
-extern const char* LANG_DE_DATA;
-extern const char* LANG_IT_DATA;
-extern const char* LANG_PT_DATA;
-extern const char* LANG_RU_DATA;
-extern const char* LANG_JA_DATA;
-extern const char* LANG_ZH_DATA;
-
 static const LangInfo LANGUAGES[] = {
-    { "en", "English",    LANG_EN_DATA },
-    { "es", "Español",    LANG_ES_DATA },
-    { "fr", "Français",   LANG_FR_DATA },
-    { "de", "Deutsch",    LANG_DE_DATA },
-    { "it", "Italiano",   LANG_IT_DATA },
-    { "pt", "Português",  LANG_PT_DATA },
-    { "ru", "Русский",    LANG_RU_DATA },
-    { "ja", "日本語",      LANG_JA_DATA },
-    { "zh", "中文",        LANG_ZH_DATA },
+    { "en", "English",    IDR_LANG_EN },
+    { "es", "Espanol",    IDR_LANG_ES },
+    { "fr", "Francais",   IDR_LANG_FR },
+    { "de", "Deutsch",    IDR_LANG_DE },
+    { "it", "Italiano",   IDR_LANG_IT },
+    { "pt", "Portugues",  IDR_LANG_PT },
+    { "ru", "Russkiy",    IDR_LANG_RU },
+    { "ja", "Nihongo",    IDR_LANG_JA },
+    { "zh", "Zhongwen",   IDR_LANG_ZH },
 };
 static const int LANG_COUNT = sizeof(LANGUAGES) / sizeof(LANGUAGES[0]);
 
-static const char* FindLanguageData(const char* code) {
+// Load a language JSON from the embedded resource into memory.
+// Returns nullptr on failure.
+static char* LoadLangResource(int resourceId, int* outLen) {
+    HRSRC hRes = FindResource(NULL, MAKEINTRESOURCE(resourceId), "BINARY");
+    if (!hRes) return nullptr;
+
+    HGLOBAL hData = LoadResource(NULL, hRes);
+    if (!hData) return nullptr;
+
+    void* pData = LockResource(hData);
+    DWORD size = SizeofResource(NULL, hRes);
+    if (!pData || size == 0) return nullptr;
+
+    char* buf = (char*)malloc(size + 1);
+    if (!buf) return nullptr;
+    memcpy(buf, pData, size);
+    buf[size] = 0;
+    *outLen = (int)size;
+    return buf;
+}
+
+static int FindLangResource(const char* code) {
+    if (!code) return LANGUAGES[0].resourceId;
     for (int i = 0; i < LANG_COUNT; i++) {
-        if (strcmp(LANGUAGES[i].code, code) == 0) return LANGUAGES[i].data;
+        if (strcmp(LANGUAGES[i].code, code) == 0) return LANGUAGES[i].resourceId;
     }
-    return LANGUAGES[0].data;  // fallback to English
+    return LANGUAGES[0].resourceId;
 }
 
 static void ParseInto(LangEntry* out, int* count, const char* data, int max) {
@@ -63,7 +72,6 @@ static void ParseInto(LangEntry* out, int* count, const char* data, int max) {
 
     for (int i = 0; i < n && *count < max; i++) {
         if (tokens[i].type == JSON_STRING && i + 1 < n && tokens[i + 1].type == JSON_STRING) {
-            // Every other string is a key-value pair
             int klen = tokens[i].size < 64 ? tokens[i].size : 63;
             strncpy(out[*count].key, tokens[i].start, klen);
             out[*count].key[klen] = 0;
@@ -73,37 +81,50 @@ static void ParseInto(LangEntry* out, int* count, const char* data, int max) {
             out[*count].value[vlen] = 0;
 
             (*count)++;
-            i++;  // skip value token
+            i++;
         }
     }
 }
 
-void Lang::Init(const char* langCode) {
-    strncpy(g_current, langCode ? langCode : "en", sizeof(g_current) - 1);
+static void LoadLanguage(const char* code) {
     g_entryCount = 0;
+    strncpy(g_current, code ? code : "en", sizeof(g_current) - 1);
+    g_current[sizeof(g_current) - 1] = 0;
 
-    const char* data = FindLanguageData(g_current);
-    ParseInto(g_entries, &g_entryCount, data, 512);
-
-    // If the chosen language didn't load anything, try English
-    if (g_entryCount == 0 && strcmp(g_current, "en") != 0) {
+    int id = FindLangResource(g_current);
+    int len = 0;
+    char* data = LoadLangResource(id, &len);
+    if (!data) {
+        // Fallback to English
         strcpy(g_current, "en");
-        ParseInto(g_entries, &g_entryCount, LANG_EN_DATA, 512);
+        data = LoadLangResource(LANGUAGES[0].resourceId, &len);
     }
+    if (!data) return;
+
+    ParseInto(g_entries, &g_entryCount, data, 512);
+    free(data);
+}
+
+void Lang::Init(const char* langCode) {
+    LoadLanguage(langCode);
 }
 
 const char* Lang::T(const char* key) {
     if (!key) return "";
-
     for (int i = 0; i < g_entryCount; i++) {
         if (strcmp(g_entries[i].key, key) == 0) return g_entries[i].value;
     }
-
-    // Fallback: return the key itself so missing strings are visible
     return key;
 }
 
 const char* Lang::Current() { return g_current; }
+
 int Lang::Count() { return LANG_COUNT; }
-const char* Lang::CodeAt(int i) { return (i >= 0 && i < LANG_COUNT) ? LANGUAGES[i].code : "en"; }
-const char* Lang::NameAt(int i) { return (i >= 0 && i < LANG_COUNT) ? LANGUAGES[i].name : "English"; }
+
+const char* Lang::CodeAt(int i) {
+    return (i >= 0 && i < LANG_COUNT) ? LANGUAGES[i].code : "en";
+}
+
+const char* Lang::NameAt(int i) {
+    return (i >= 0 && i < LANG_COUNT) ? LANGUAGES[i].name : "English";
+}
