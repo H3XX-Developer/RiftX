@@ -1,21 +1,21 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,50:FFD700,100:00D4FF&height=200&section=header&text=&fontSize=0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:B8860B,30:DAA520,60:FFD700,100:B8860B&height=200&section=header&text=&fontSize=0" width="100%"/>
 
 <img src="assets/logo/riftx-logo.png" width="340" alt="RiftX"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=44&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&height=80&lines=RIFTX;THE+HOMEBREW+STORE;FOR+XBOX+360" alt="RiftX"/>
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=44&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=700&height=80&lines=RIFTX;THE+HOMEBREW+STORE;FOR+XBOX+360" alt="RiftX"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=900&color=FFD700&center=true&vCenter=true&width=700&height=30&lines=One+File.+No+Login.+No+Server.;Built+for+the+360+scene." alt="Tagline"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=900&color=DAA520&center=true&vCenter=true&width=700&height=30&lines=One+File.+No+Login.+No+Server.;Built+for+the+360+scene." alt="Tagline"/>
 
 <br>
 
-<img src="https://img.shields.io/badge/STATUS-NOT%20PUBLIC%20YET-FFD700?style=for-the-badge&labelColor=00D4FF" alt="Status"/>
-<img src="https://img.shields.io/badge/PRIVATE%20DEV-ACTIVE-00D4FF?style=for-the-badge&labelColor=FFD700" alt="Dev"/>
-<img src="https://img.shields.io/badge/LICENSE-PROPRIETARY-FFD700?style=for-the-badge&labelColor=00D4FF" alt="License"/>
-<img src="https://img.shields.io/badge/OPEN%20SOURCE-NO-00D4FF?style=for-the-badge&labelColor=FFD700" alt="Open Source"/>
-<img src="https://img.shields.io/badge/CONSOLE-RGH%20%7C%20JTAG-FFD700?style=for-the-badge&labelColor=00D4FF" alt="Console"/>
-<img src="https://img.shields.io/badge/SOLO%20DEV-YES-00D4FF?style=for-the-badge&labelColor=FFD700" alt="Solo Dev"/>
+<img src="https://img.shields.io/badge/STATUS-NOT%20PUBLIC%20YET-B8860B?style=for-the-badge&labelColor=DAA520" alt="Status"/>
+<img src="https://img.shields.io/badge/PRIVATE%20DEV-ACTIVE-FFD700?style=for-the-badge&labelColor=B8860B" alt="Dev"/>
+<img src="https://img.shields.io/badge/LICENSE-PROPRIETARY-DAA520?style=for-the-badge&labelColor=FFD700" alt="License"/>
+<img src="https://img.shields.io/badge/OPEN%20SOURCE-NO-B8860B?style=for-the-badge&labelColor=DAA520" alt="Open Source"/>
+<img src="https://img.shields.io/badge/CONSOLE-RGH%20%7C%20JTAG-FFD700?style=for-the-badge&labelColor=B8860B" alt="Console"/>
+<img src="https://img.shields.io/badge/SOLO%20DEV-YES-DAA520?style=for-the-badge&labelColor=FFD700" alt="Solo Dev"/>
 
 <br><br>
 
@@ -59,7 +59,7 @@ users can drop onto their Xbox 360 and launch.
 ### ❌ What you can NOT do
 
 - Copy the source code
-- Fork the project
+- Fork the project and redistribute it
 - Redistribute builds
 - Claim the project as your own
 - Use the RiftX branding for other projects
@@ -68,6 +68,7 @@ users can drop onto their Xbox 360 and launch.
 
 - Use RiftX on your console once released
 - Submit apps/games to the catalog (see below)
+- **Apply to help develop RiftX** (see below)
 - Report bugs and suggest features
 - Follow development
 
@@ -104,11 +105,66 @@ when it's ready, not when it's rushed.
 
 ---
 
-## 🟦 What is RiftX?
+## 🤝 Want to Help Develop RiftX?
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&width=650&height=35&lines=Browse.;Download.;Install.;Play.;All+on+your+Xbox+360." alt="What"/>
+### 💡 **I welcome help from other developers!**
+
+</div>
+
+RiftX is currently a solo project, but **I am 100% open to others helping**
+— whether that's:
+
+- 🧩 **Building apps** for the catalog
+- 💻 **Writing code** for the launcher
+- 🎨 **Making icons, themes, or graphics**
+- 🧪 **Testing** builds and reporting bugs
+- 📝 **Writing documentation**
+- 🌍 **Translating** strings into other languages
+
+**More hands = faster progress.** If you want to help, you're welcome.
+
+### How to apply
+
+1. **Join our Discord** — [PASTE_DISCORD_LINK_HERE](PASTE_DISCORD_LINK_HERE)
+2. **Go to the `#application` channel**
+3. **Fill out the application form** with:
+   - Your name / handle
+   - What you want to help with (code, apps, testing, art, docs, etc.)
+   - Your experience / portfolio (if any)
+   - How many hours per week you can commit
+   - Why you want to help with RiftX
+
+### What happens next
+
+- 📩 Your application is reviewed **on the weekend** (when I have time)
+- ✅ If approved, you get a **Contributor** role on Discord
+- ✅ You get access to the **private development channels**
+- ✅ Your name gets added to the **credits**
+- ❌ If not accepted right now, you can reapply later — no hard feelings
+
+### Rules for contributors
+
+- 🚫 **Do NOT leak private code or builds** — instant removal
+- 🚫 **Do NOT share access** with anyone else
+- 🚫 **Do NOT claim RiftX as your own**
+- ✅ **Credit is given** for everything you contribute
+- ✅ **You keep ownership** of anything you make
+- ✅ **Respect others** — no drama, no toxicity
+
+> ⏳ **Applications are reviewed on weekends only.** Please be patient.
+
+**Every contribution matters — even small ones.** Whether it's a bug fix, a
+new icon, or a translated string — it all helps RiftX get better.
+
+---
+
+## 🟡 What is RiftX?
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=FFD700&center=true&vCenter=true&width=650&height=35&lines=Browse.;Download.;Install.;Play.;All+on+your+Xbox+360." alt="What"/>
 
 </div>
 
@@ -278,14 +334,23 @@ RiftX will host:
 
 ## 🎨 Design
 
-RiftX uses a dark cinematic theme with **light blue (`#00D4FF`)** and
-**gold (`#FFD700`)** accents, giving it a premium look inspired by modern
-Xbox interfaces.
+RiftX uses a **metallic rich gold** theme — deep bronze to bright gold
+gradients, shimmering highlights, and a dark cinematic background. The look
+is inspired by luxury branding and classic gaming interfaces.
 
 - 🌌 Deep black-purple background
-- 💎 Glowing light blue for interactive elements
-- ⭐ Gold for highlights and achievements
+- 🥇 **Rich metallic gold** for interactive elements (`#FFD700`, `#DAA520`, `#B8860B`)
+- ✨ Shimmering gold gradients on buttons and titles
 - 🕹️ Controller-first navigation throughout
+
+### Gold palette
+
+| Color | Hex | Use |
+|---|---|---|
+| Bright Gold | `#FFD700` | Highlights, titles |
+| Goldenrod | `#DAA520` | Buttons, accents |
+| Dark Goldenrod | `#B8860B` | Borders, secondary |
+| Deep Bronze | `#8B6914` | Shadows, depth |
 
 ---
 
@@ -293,10 +358,13 @@ Xbox interfaces.
 
 | Role | Name |
 |---|---|
-| 🟦 **Owner & Solo Developer** | **H3XX-Dev** |
+| 🟡 **Owner & Solo Developer** | **H3XX-Dev** |
 | 💻 Lead Coder | H3XX-Dev |
+| 🤝 **Contributors** | *Open — apply on Discord!* |
 
-**RiftX is developed by one person — H3XX-Dev.**
+**RiftX is developed by one person — H3XX-Dev — with help from contributors.**
+
+**Want to be listed here?** [Apply on Discord.](PASTE_DISCORD_LINK_HERE)
 
 ---
 
@@ -333,11 +401,17 @@ No. RiftX is proprietary software and the source code is private.
 No. It's in active private development.
 
 **Who makes RiftX?**
-Just one person — **H3XX-Dev**. It's a solo project.
+Just one person — **H3XX-Dev**. It's a solo project, but I welcome help
+from contributors.
 
 **Why do updates take so long?**
 Because it's a solo project, and I only code on weekends. Weekdays are for
 real life. Updates will be a bit long but we will get there.
+
+**Can I help develop RiftX?**
+Yes! [Join the Discord](PASTE_DISCORD_LINK_HERE) and apply in the
+**#application** channel. All help is welcome — code, apps, graphics,
+testing, docs, translations.
 
 **When will it be released?**
 After private beta testing confirms it's stable. No set date.
@@ -360,8 +434,8 @@ details. See the **Want Your App on RiftX?** section above. Reviews happen
 on weekends.
 
 **Can I contribute to RiftX itself?**
-Not at this stage. Once private beta is running, contributors will be
-invited.
+Yes! [Apply on Discord](PASTE_DISCORD_LINK_HERE) in the **#application**
+channel. See the **Want to Help Develop RiftX?** section above.
 
 **Where do I get it when it's released?**
 Right here on this repo's releases page.
@@ -388,7 +462,7 @@ without written permission.**
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFD700,50:00D4FF,100:FFD700&height=120&section=footer&text=&fontSize=0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B6914,50:B8860B,70:DAA520,100:FFD700&height=120&section=footer&text=&fontSize=0" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=30&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=500&height=50&lines=RIFTX" alt="RiftX"/>
 
@@ -397,6 +471,8 @@ without written permission.**
 ### 🚫 NOT OPEN SOURCE — PROPRIETARY
 
 ### 👤 SOLO DEV — WEEKEND CODING
+
+### 🤝 CONTRIBUTORS WELCOME — APPLY ON DISCORD
 
 ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦
 
@@ -408,6 +484,6 @@ without written permission.**
 
 [💬 Join our Discord](PASTE_DISCORD_LINK_HERE)
 
-![Made with](https://img.shields.io/badge/MADE%20WITH-%E2%9D%A4%20%26%20C%2B%2B-00D4FF?style=for-the-badge&labelColor=FFD700)
+![Made with](https://img.shields.io/badge/MADE%20WITH-%E2%9D%A4%20%26%20C%2B%2B-FFD700?style=for-the-badge&labelColor=B8860B)
 
 </div>
