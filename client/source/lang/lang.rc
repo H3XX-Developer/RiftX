@@ -1,0 +1,11 @@
+#include "resource.h"
+
+IDR_LANG_EN BINARY "en.json"
+IDR_LANG_ES BINARY "es.json"
+IDR_LANG_FR BINARY "fr.json"
+IDR_LANG_DE BINARY "de.json"
+IDR_LANG_IT BINARY "it.json"
+IDR_LANG_PT BINARY "pt.json"
+IDR_LANG_RU BINARY "ru.json"
+IDR_LANG_JA BINARY "ja.json"
+IDR_LANG_ZH BINARY "zh.json"
