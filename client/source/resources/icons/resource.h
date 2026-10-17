@@ -1,2 +1,2 @@
 #pragma once
-#define IDR_ICON_PNG    201
+#define IDR_ICON_JPG    201
