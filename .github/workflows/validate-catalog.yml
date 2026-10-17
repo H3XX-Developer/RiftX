@@ -1,0 +1,65 @@
+name: Validate Catalog
+
+on:
+  push:
+    paths:
+      - 'catalog/**.json'
+      - 'updates/**.json'
+      - '.github/workflows/validate-catalog.yml'
+  pull_request:
+    paths:
+      - 'catalog/**.json'
+      - 'updates/**.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate apps.json
+        run: |
+          node -e "
+            const d = JSON.parse(require('fs').readFileSync('catalog/apps.json', 'utf8'));
+            if (!d.apps || !Array.isArray(d.apps)) throw new Error('Missing apps array');
+            d.apps.forEach((a, i) => {
+              if (!a.id) throw new Error('App ' + i + ' missing id');
+              if (!a.name) throw new Error('App ' + a.id + ' missing name');
+              if (!a.latest) throw new Error('App ' + a.id + ' missing latest');
+              if (!a.versions || !a.versions.length) throw new Error('App ' + a.id + ' missing versions');
+              a.versions.forEach(v => {
+                if (!v.version) throw new Error(a.id + ' version missing version field');
+                if (!v.sha256) throw new Error(a.id + ' v' + v.version + ' missing sha256');
+                if (!v.download) throw new Error(a.id + ' v' + v.version + ' missing download');
+              });
+            });
+            console.log('apps.json OK (' + d.apps.length + ' apps)');
+          "
+
+      - name: Validate games.json
+        run: |
+          node -e "
+            const d = JSON.parse(require('fs').readFileSync('catalog/games.json', 'utf8'));
+            if (!d.games || !Array.isArray(d.games)) throw new Error('Missing games array');
+            d.games.forEach((g, i) => {
+              if (!g.id) throw new Error('Game ' + i + ' missing id');
+              if (!g.name) throw new Error('Game ' + g.id + ' missing name');
+              if (!g.latest) throw new Error('Game ' + g.id + ' missing latest');
+            });
+            console.log('games.json OK (' + d.games.length + ' games)');
+          "
+
+      - name: Validate manifest.json
+        run: |
+          node -e "
+            const d = JSON.parse(require('fs').readFileSync('updates/manifest.json', 'utf8'));
+            if (!d.launcher) throw new Error('Missing launcher object');
+            if (!d.launcher.latest) throw new Error('Missing launcher.latest');
+            if (!d.launcher.download) throw new Error('Missing launcher.download');
+            console.log('manifest.json OK (v' + d.launcher.latest + ')');
+          "
