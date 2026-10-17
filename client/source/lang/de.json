@@ -1,0 +1,16 @@
+{
+  "app_name": "RiftX",
+  "loading": "Wird geladen...",
+  "install": "Installieren",
+  "update": "Aktualisieren",
+  "uninstall": "Deinstallieren",
+  "settings": "Einstellungen",
+  "back": "Zurück",
+  "download": "Wird heruntergeladen...",
+  "verifying": "Wird überprüft...",
+  "installing": "Wird installiert...",
+  "error_generic": "Etwas ist schiefgelaufen.",
+  "error_network": "Keine Internetverbindung.",
+  "error_verify": "Download-Überprüfung fehlgeschlagen.",
+  "language": "Sprache"
+}
