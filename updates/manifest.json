@@ -1,0 +1,11 @@
+{
+  "launcher": {
+    "latest": "1.2.7",
+    "min_supported": "0.0.0",
+    "released": "2026-10-17",
+    "changelog": "Initial RiftX release.",
+    "size": 0,
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "download": "https://YOUR-USERNAME.github.io/RiftX/releases/RiftX.xex"
+  }
+}
