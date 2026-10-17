@@ -1,9 +1,9 @@
 #pragma once
 
 struct Config {
-    static const char* AppsUrl()      { return "https://YOUR-USERNAME.github.io/RiftX/catalog/apps.json"; }
-    static const char* GamesUrl()     { return "https://YOUR-USERNAME.github.io/RiftX/catalog/games.json"; }
-    static const char* ManifestUrl()  { return "https://YOUR-USERNAME.github.io/RiftX/updates/manifest.json"; }
+    static const char* AppsUrl()      { return "https://H3XX-Developer.github.io/RiftX/catalog/apps.json"; }
+    static const char* GamesUrl()     { return "https://H3XX-Developer.github.io/RiftX/catalog/games.json"; }
+    static const char* ManifestUrl()  { return "https://H3XX-Developer.github.io/RiftX/updates/manifest.json"; }
 
     static const char* InstallDir()   { return "Hdd:\\RiftX\\Apps\\"; }
     static const char* DownloadDir()  { return "Hdd:\\RiftX\\Downloads\\"; }
