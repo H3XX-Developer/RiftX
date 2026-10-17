@@ -1,0 +1,14 @@
+{
+  "app_name": "RiftX",
+  "loading": "Chargement...",
+  "install": "Installer",
+  "update": "Mettre à jour",
+  "uninstall": "Désinstaller",
+  "settings": "Paramètres",
+  "back": "Retour",
+  "download": "Téléchargement...",
+  "verifying": "Vérification...",
+  "installing": "Installation...",
+  "error_generic": "Une erreur est survenue.",
+  "error_network": "Pas de connexion internet.",
+  "error_
