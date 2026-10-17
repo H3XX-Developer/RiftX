@@ -1,0 +1,25 @@
+# Build output
+client/build/bin/
+*.xex
+*.xexp
+*.obj
+*.res
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.map
+
+# IDE
+.vs/
+.vscode/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
